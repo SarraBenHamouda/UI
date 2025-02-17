@@ -1,10 +1,12 @@
-@import 'variables'; 
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
-.button-primary {
-    @include button-style($primary-color);
-    border : 1px solid black
+.btn-primary {
+  @include button-style($primary-color, white);
+  margin-top: 10px;
 }
-.button-secondary {
-    @include button-style($secondary-color);
+
+.btn-secondary {
+  @include button-style($secondary-color, $text-color);
+  border: 1px solid $primary-color;
 }

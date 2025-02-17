@@ -1,0 +1,19 @@
+@import "variables";
+
+.form-group {
+  margin-bottom: 15px;
+
+  label {
+    display: block;
+    font-weight: bold;
+    color: $text-color;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid darken($secondary-color, 10%);
+    border-radius: $border-radius;
+  }
+}

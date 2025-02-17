@@ -1,46 +1,92 @@
-.button-primary {
-  background-color: #434343;
+.btn-primary {
+  background-color: #d268b4;
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
-  border: 1px solid black;
+  transition: 0.3s;
+  margin-top: 10px;
 }
-.button-primary:hover {
-  opacity: 80%;
+.btn-primary:hover {
+  opacity: 0.8;
 }
 
-.button-secondary {
-  background-color: #2e2e2e;
-  color: white;
+.btn-secondary {
+  background-color: #f4f4f4;
+  color: #333;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #d268b4;
 }
-.button-secondary:hover {
-  opacity: 80%;
+.btn-secondary:hover {
+  opacity: 0.8;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(218.5, 218.5, 218.5);
+  border-radius: 10px;
 }
 
 body {
-  font-family: "Arial", sans-serif;
-  color: #000;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(245, 160, 188);
 }
-@media (max-width: 600px) {
-  body {
-    background-color: rgb(43, 168, 209);
-  }
+
+.profile-card {
+  width: 300px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: "Lato, sans-serif";
+  overflow: hidden;
 }
-@media (max-width: 601px) and (max-width: 900px) {
-  body {
-    background-color: lightgreen;
-  }
+.profile-img img {
+  width: 80%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.profile .profile-info {
+  padding: 15px;
+}
+.profile .profile-info h2 {
+  color: #333;
+  margin-bottom: 5px;
+}
+.profile .profile-info p {
+  color: black;
+  font-size: 14px;
+}
+.profile .profile-info .btn-primary {
+  background-color: #d268b4;
+  color: rgb(249, 243, 243);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.profile .profile-info .btn-primary:hover {
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=main.css.map */

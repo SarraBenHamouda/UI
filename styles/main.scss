@@ -1,19 +1,53 @@
-@import 'variables' ; 
-@import 'mixins';
-@import 'buttons';
+@import "variables";
+@import "mixins";
+@import "buttons";
+@import "form";
+
 
 body {
-    font-family: $font-stack;
-    color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  margin: 0;
+  background-color: rgb(245, 160, 188);
+}
 
-    height: 100vh;
-    @include flex-center;
-    flex-direction: column;
-    @include responsive(mobile){
-        background-color: rgb(43, 168, 209);
+.profile {
+ 
+    &-card {
+    width: 300px;
+  background-color: $secondary-color;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: $font-family;
+  overflow: hidden;
+    }
+  &-img {
+    img {
+      width: 80%;
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+  }
+
+  .profile-info {
+    padding: 15px;
+
+    h2 {
+      color: $text-color;
+      margin-bottom: 5px;
     }
 
-    @include responsive(tablet){
-        background-color: lightgreen;
+    p {
+      color: darken($text-color, 20%);
+      font-size: 14px;
     }
+
+    .btn-primary {
+      @include button-style($primary-color, rgb(249, 243, 243));
+    }
+  }
 }
