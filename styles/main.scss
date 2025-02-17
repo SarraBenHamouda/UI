@@ -1,0 +1,12 @@
+@import 'variables' ; 
+@import 'mixins';
+@import 'buttons';
+
+body {
+    font-family: $font-stack;
+    color: #000;
+
+    height: 100vh;
+    @include flex-center;
+    flex-direction: column;
+}

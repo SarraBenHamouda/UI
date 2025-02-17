@@ -1,0 +1,36 @@
+.button-primary {
+  background-color: #434343;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.button-primary:hover {
+  opacity: 80%;
+}
+
+.button-secondary {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button-secondary:hover {
+  opacity: 80%;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=main.css.map */

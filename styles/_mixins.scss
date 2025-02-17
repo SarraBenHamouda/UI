@@ -1,0 +1,41 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+@mixin flex($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: $direction ;
+}
+@mixin button-style($bg-color){
+    background-color: $bg-color;
+    color: white;
+    padding: 10px 20px ;
+    border: none;
+    border-radius: 5px ;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 80% ;
+    }
+}
+@mixin responsive($breakpoint) {
+    @if $breakpoint == mobile {
+        @media (max-width : 600px) {
+            @content
+        }
+    }
+    @else if $breakpoint == tablet {
+        @media (max-width : 601px) and (max-width : 900px) {
+            @content
+        }
+    }
+    @else if $breakpoint == desktop {
+        @media (max-width : 901px) {
+            @content
+        }
+    }
+}
