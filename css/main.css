@@ -32,5 +32,15 @@ body {
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 600px) {
+  body {
+    background-color: rgb(43, 168, 209);
+  }
+}
+@media (max-width: 601px) and (max-width: 900px) {
+  body {
+    background-color: lightgreen;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

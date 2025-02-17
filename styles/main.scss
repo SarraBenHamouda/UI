@@ -9,4 +9,11 @@ body {
     height: 100vh;
     @include flex-center;
     flex-direction: column;
+    @include responsive(mobile){
+        background-color: rgb(43, 168, 209);
+    }
+
+    @include responsive(tablet){
+        background-color: lightgreen;
+    }
 }
